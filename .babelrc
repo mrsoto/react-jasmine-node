@@ -1,0 +1,17 @@
+{
+  "env": {
+    "test": {
+      "presets": ["es2015-node"],
+      "plugins": [
+        "transform-react-jsx",
+        ["module-resolver", {
+            "root": ["app"],
+            "alias": {
+              "my-app": "/"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
